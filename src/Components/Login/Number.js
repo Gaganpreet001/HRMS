@@ -35,6 +35,7 @@ const isValidMobileNumber = (number) => {
     return /^\d{10}$/.test(number);
 };
 
+
   return (
     <Layout className="layout">
       {/* Header and Menu */}
@@ -47,6 +48,7 @@ const isValidMobileNumber = (number) => {
           <Menu.Item key="1">Credit Management</Menu.Item>
           </div>
           <div style={{}}>
+          <Menu.Item key="2">Treasury Management</Menu.Item>
           <Menu.Item key="2">Treasury Management</Menu.Item>
           </div>
           <div  style={{}}>
