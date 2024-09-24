@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Layout, Menu } from 'antd'; // Import necessary Ant Design components
-import './Number.css'; // Your CSS file
+import { Layout, Menu } from 'antd'; 
+import './Number.css'; 
 import { toast } from 'react-toastify';
 const { Header, Content } = Layout;
 
@@ -38,7 +38,7 @@ const isValidMobileNumber = (number) => {
 
   return (
     <Layout className="layout">
-      {/* Header and Menu */}
+  
       <Header style={{ background: '#fff', padding: 0 }}>
         <div style={{ float: 'left', padding: '0 20px' }}>
         <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Top " className="top-image" style={{ flex: "center" }} />
@@ -49,7 +49,7 @@ const isValidMobileNumber = (number) => {
           </div>
           <div style={{}}>
           <Menu.Item key="2">Treasury Management</Menu.Item>
-          <Menu.Item key="2">Treasury Management</Menu.Item>
+         
           </div>
           <div  style={{}}>
           <Menu.Item key="3">Features</Menu.Item>

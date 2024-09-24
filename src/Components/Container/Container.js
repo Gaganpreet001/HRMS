@@ -1,6 +1,5 @@
 import React from 'react';
-import { Layout, Menu } from 'antd'; // Import Divider and other Ant Design components
-
+import { Layout, Menu } from 'antd'; 
 const { Header } = Layout;
 
 const Container = () => (
