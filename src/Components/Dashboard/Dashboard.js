@@ -10,7 +10,6 @@ const Dashboard = () => {
   const navigate = useNavigate(); 
 
   const handleLogout = () => {
-    
     localStorage.removeItem('X-WRK-CODE'); 
     localStorage.removeItem('refresh_token');
     navigate('/');
@@ -29,8 +28,7 @@ const Dashboard = () => {
           />
         </div>
         
-        <Menu theme="light" mode="horizontal" defaultSelectedKeys={['2']} style={{ lineHeight: '64px', flex: 1 }}>
-        </Menu>
+        <Menu theme="light" mode="horizontal" defaultSelectedKeys={['2']} style={{ lineHeight: '64px', flex: 1 }}></Menu>
 
         <div style={{ display: 'flex', alignItems: 'center', marginRight: '20px' }}>
           <Button
@@ -60,13 +58,13 @@ const Dashboard = () => {
             defaultSelectedKeys={['1']}
             style={{ height: '100%', borderRight: 0 }}
           >
-            <Menu.Item key="1" icon={<UserOutlined />}>
+            <Menu.Item key="1" icon={<UserOutlined />} onClick={() => navigate('/team')}>
               Team
             </Menu.Item>
-            <Menu.Item key="2" icon={<CalendarOutlined />}>
+            <Menu.Item key="2" icon={<CalendarOutlined />} onClick={() => navigate('/attendance')}>
               Attendance
             </Menu.Item>
-            <Menu.Item key="3" icon={<WalletOutlined />}>
+            <Menu.Item key="3" icon={<WalletOutlined />} onClick={() => navigate('/salary')}>
               Salary
             </Menu.Item>
           </Menu>
